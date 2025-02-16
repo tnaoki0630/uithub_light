@@ -6,4 +6,6 @@ requirements.txt
 *.html
 *.py
 *.h
-
+*.mm
+makefile
+*.md
