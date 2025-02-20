@@ -16,7 +16,8 @@ if [ ! -f "$list_path" ]; then
 fi
 
 # ファイルツリーを上書き出力
-tree > src.txt
+echo "-------------------------------------" > src.txt
+tree >> src.txt
 echo "-------------------------------------" >> src.txt
 echo "" >> src.txt  # 区切り用の空行
 echo "" >> src.txt
@@ -34,3 +35,5 @@ done < $list_path | sort -zu | while IFS= read -r -d '' file; do
   echo "" >> src.txt
   echo "" >> src.txt
 done
+
+echo "output src.txt is completed."
